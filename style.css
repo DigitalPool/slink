@@ -1,0 +1,165 @@
+/* Reset and base styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f4f4f9;
+	height: 100vh;
+}
+
+#form-section {
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	width: 90%;
+	max-width: 400px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: 600;
+	color: #2c3e50;
+	margin-bottom: 0.5rem;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 300;
+	color: #7f8c8d;
+	margin-bottom: 1.5rem;
+}
+
+#input-form {
+	margin-bottom: 1rem;
+}
+
+#input-el {
+	width: 100%;
+	padding: 0.75rem;
+	border: 2px solid #ecf0f1;
+	border-radius: 5px;
+	font-size: 1rem;
+	outline: none;
+	transition: all 0.3s ease;
+}
+
+#input-el:focus {
+	border-color: #3498db;
+	box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+#buttons {
+	display: flex;
+	gap: 0.5rem;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+}
+
+button {
+	font-size: 0.9rem;
+	font-weight: 600;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.save-btn {
+	background-color: #2ecc71;
+	color: white;
+	border: none;
+}
+
+.save-btn:hover {
+	background-color: #27ae60;
+}
+
+#del-btn {
+	background-color: #e74c3c;
+	color: white;
+	border: none;
+}
+
+#del-btn:hover {
+	background-color: #c0392b;
+}
+
+#added-list h2 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #2c3e50;
+	margin-bottom: 0.5rem;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	text-align: left;
+}
+
+ul li {
+	margin: 0.5rem 0;
+}
+
+a {
+	color: #3498db;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Added styling for scrollable and manageable list */
+#added-list {
+	max-height: 200px; /* Limit the height to 200px (around 5 links) */
+	overflow-y: auto;  /* Add a vertical scrollbar when content overflows */
+	border: 1px solid #ddd; /* Optional: To visually separate the list container */
+	padding: 0.5rem;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+}
+
+/* Handle long links with truncation */
+ul#your-list {
+	list-style-type: none; /* Remove default list styling */
+	padding: 0;
+	margin: 0;
+}
+
+ul#your-list li {
+	margin-bottom: 0.5rem; /* Add space between list items */
+	white-space: nowrap;  /* Prevent text from wrapping */
+	overflow: hidden;     /* Hide the overflowing text */
+	text-overflow: ellipsis; /* Add ellipsis (...) for long text */
+	padding: 0.2rem;
+	border-bottom: 1px solid #ececec; /* Optional: Separator for better readability */
+}
+
+/* Ensure links wrap on hover to display full URL */
+ul#your-list li:hover {
+	white-space: normal;  /* Allow wrapping on hover */
+	overflow: visible;    /* Show full text on hover */
+	background-color: #f0f0f0; /* Optional: Highlight the item on hover */
+}
+
+/* Style for anchor tags (links) */
+ul#your-list li a {
+	text-decoration: none;
+	color: #3498db;
+	font-size: 0.9rem;
+}
+
+ul#your-list li a:hover {
+	text-decoration: underline; /* Highlight link on hover */
+}
